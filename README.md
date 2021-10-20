@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Hualdop/tipCalculatorApp)
 - Live Site URL: [Add live site URL here](https://hualdop.github.io/tipCalculatorApp/)
 
 ## My process
