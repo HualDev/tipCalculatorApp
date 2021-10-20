@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="general">
+      <div class="img">
+        <img class="img" src="./images/logo.svg" alt="">
+      </div>
+      
+      <div class="presentar">
+
+        <div class="datos">
+          <div class="iconDolar">
+            <img src="./images/icon-dollar.svg" alt="Dollar Icon">
+          </div>
+          <div class="iconPersona">
+            <img src="./images/icon-person.svg" alt="Person Icon">
+          </div>
+          <form action="" id="miForm">
+            <label for="bill" >Bill</label><br>
+            <input class="input" id="bill" type="number" onfocus="mostrarZero()" placeholder="0"><br><br>
+            <label for="">Select Tip %</label><br>
+            <input class="porcentaje afterclick" type="button" onclick="cinco()" value=" 5%">
+            <input class="porcentaje afterclick" type="button" onclick="diez()" value="10%">
+            <input class="porcentaje afterclick" type="button" onclick="quince()" value="15%">
+            <input class="porcentaje afterclick" type="button" onclick="veinticinco()" value="25%">
+            <input class="porcentaje afterclick" type="button" onclick="cincuenta()" value="50%">
+            <input class="input custom" id="cust" onfocus="percent()" type="number" placeholder="Custom"><br><br>
+            <label for="cust">Number of People</label>
+            <label for="" id="zero" class="zero">Can´t be zero</label>
+            <input class="input" id="numberPeople" type="number" onChange="ocultarZero()" placeholder="0" >
+          
+         </form>
+        </div>
+
+        <div class="resultado">
+          <div class="amount">
+            Tip Amount
+          </div>
+          <div class="persona">
+            / person
+          </div>
+          <div class="total">
+            Total
+          </div>
+          <div class="tPersona">
+            / person
+          </div>
+          <div id="amountPerson" class="rPersona">
+            $0.00
+          </div>
+          <div id="rTotal" class="rTotal" >
+            $0.00
+          </div>
+            
+          <div id="reset" class="reset" onclick="reset()">
+            Reset
+          </div>
+        </div>
+      </div>        
+    </div>
+    <div class="attribution footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Hualdo</a>.
+    </div>
+  </div> 
+    <script src="./tip.js"></script>
+</body>
+</html>

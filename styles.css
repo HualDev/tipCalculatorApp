@@ -1,0 +1,293 @@
+:root{
+    --strongCyan: #26c0ab;
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --darkGrayishCyan1: hsl(184, 14%,56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --lightGrayishCyan1: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+body{
+    margin: 0;
+    background-color: var(--lightGrayishCyan);
+    font-family: 'space mono';
+      
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; }
+input[type=number] { -moz-appearance:textfield; }  
+
+.general{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.presentar{
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.datos{    
+    height: 300px;
+    width: 350px;
+    font-family: 'space mono';
+}
+
+.resultado{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    background-color: var(--veryDarkCyan);
+    border-radius: 20px;    
+}
+
+.porcentaje{
+    padding: 8px 30px;
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'space mono';
+    cursor: pointer;
+    user-select: none;
+}
+
+.afterclick:focus{
+    background-color: var(--strongCyan);
+    color: var(--veryDarkCyan);
+    font-weight: 700;
+    }
+
+.input{
+    width: 320px;
+    font-size: 24px;
+    text-align: right;
+    color: var(--veryDarkCyan);
+    font-weight: 700;
+    border: none;
+    background-color: var(--lightGrayishCyan1);
+    font-family: 'space mono';
+    z-index: -1;
+}
+
+input:focus{
+    outline-color: var(--strongCyan);
+}
+
+.custom{
+    width: 80px;
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'space mono';
+    justify-content: center;
+    align-items: center;
+}
+
+.custom::placeholder{
+    font-size: 16px;
+    }
+
+.amount{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    color: var(--white);
+    font-family: 'space mono';
+}
+
+.persona{
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    color: var(--white);
+    font-family: 'space mono';
+}
+
+.total{
+    position: absolute;
+    top: 115px;
+    left: 30px;
+    color: var(--white);
+}
+
+.tPersona{
+    position: absolute;
+    top: 135px;
+    left: 30px;
+    color: var(--white);
+    }
+
+.iconDolar{
+    position: absolute;
+    top: 188px;
+    left: 30px;
+   }
+
+.iconPersona{
+    position: absolute;
+    bottom: 18px;
+    left: 30px;
+}
+
+.rPersona{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: var(--strongCyan);
+    font-size: 36px;
+}
+
+.rTotal{
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    color: var(--strongCyan);
+    font-size: 36px;
+}
+
+.reset{
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    color: var(--veryDarkCyan);
+    background-color: var(--darkGrayishCyan1);
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'space mono';
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0.2;
+    }
+    
+.zero{
+    position: absolute;
+    align-items: right;
+    color: tomato;
+    text-align: right;
+    font-size: 12px;
+    left: 240px;
+    bottom: 50px;
+    font-weight: 700;
+    visibility: hidden;
+    }
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
+
+@media(max-width:375px){
+     .general{
+         top:90%;
+     }
+    .presentar{
+        height: auto;
+        width: 375px;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+    .datos{
+        width: auto;
+        height: auto;
+        margin: auto;
+        }
+
+    .resultado{
+        display: flex;
+        height: 250px;
+        width: 300px;
+        margin: 10px 0 0 20px;
+    }
+
+    .input{
+        width: 300px;
+        margin: 0 0 0 20px;
+    }
+
+    .porcentaje{
+        display:inline-flex;
+        padding: 12px 48px;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 10px 20px;
+        justify-content: space-between;
+    }
+
+    .custom{
+        width: 140px;
+        padding: 7px 20px;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    label{
+        margin: 0 0 0 20px;
+    }
+
+    .iconDolar{
+        left: 50px;
+    }
+
+    .iconPersona{
+        bottom: 287px;
+        left: 50px;
+    }
+
+    .rPersona{
+        right: 20px;
+    }
+
+    .rTotal{
+        right: 20px;
+    }
+
+    .reset{
+        display: flex;
+        left: 30px;
+        padding: 20px 40px;
+        justify-content: center;
+        align-items: center;
+        bottom: 25px;
+    }
+
+    .zero{
+        bottom: 325px;
+        left: 225px;
+        }
+
+    .footer{
+        visibility: hidden;
+    }  
+    
+    .formulario{
+        display: block;
+        margin: auto;
+    }
+}
